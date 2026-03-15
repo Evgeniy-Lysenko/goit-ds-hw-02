@@ -18,6 +18,9 @@ def create_db():
         # execute the SQL script
         cur.executescript(sql)
 
-if __name__ == "__main__":
+def main():
   create_db()
   print("Database created")
+
+if __name__ == "__main__":
+  main()
