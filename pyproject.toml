@@ -16,6 +16,8 @@ packages = [{include = "goit_ds_hw_02", from = "src"}]
 
 [tool.poetry.scripts]
 create_db = "goit_ds_hw_02.create_db:main"
+seed = "goit_ds_hw_02.seed:main"
+help = "goit_ds_hw_02.help:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

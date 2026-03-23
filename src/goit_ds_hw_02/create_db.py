@@ -14,6 +14,7 @@ def create_db():
 
       # create a connection to the database (if the database file doesn't exist, it will be created)
       with sqlite3.connect(db_path) as con:
+        con.execute("PRAGMA foreign_keys = ON;") # enable foreign key support
         cur = con.cursor()
         # execute the SQL script
         cur.executescript(sql)
